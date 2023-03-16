@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.my_toolbox.my_toolbox"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/csx/StudioProjects/my_toolbox/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/Users/csx/StudioProjects/my_toolbox/android/app/src/debug/AndroidManifest.xml:7:22-64
+16
+17    <uses-feature android:name="android.hardware.camera.autofocus" />
+17-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:3:5-70
+17-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:3:19-67
+18
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:4:5-65
+19-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:4:22-62
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:5:5-71
+20-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:5:22-68
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:6:5-79
+21-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:6:22-76
+22    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+22-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:7:5-79
+22-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:7:22-76
+23    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+23-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:8:5-80
+23-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:8:22-77
+24    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+24-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:9:5-77
+24-->/Users/csx/StudioProjects/my_toolbox/android/app/src/main/AndroidManifest.xml:9:22-74
+25    <uses-permission
+25-->[com.github.davidliu:audioswitch:c498d866c57f1d88056d5e7e7a78d622e3b0c046] /Users/csx/.gradle/caches/transforms-3/688bcd3840a77a311943c42bbaf20e2b/transformed/jetified-audioswitch-c498d866c57f1d88056d5e7e7a78d622e3b0c046/AndroidManifest.xml:9:5-11:38
+26        android:name="android.permission.BLUETOOTH"
+26-->[com.github.davidliu:audioswitch:c498d866c57f1d88056d5e7e7a78d622e3b0c046] /Users/csx/.gradle/caches/transforms-3/688bcd3840a77a311943c42bbaf20e2b/transformed/jetified-audioswitch-c498d866c57f1d88056d5e7e7a78d622e3b0c046/AndroidManifest.xml:10:9-52
+27        android:maxSdkVersion="30" />
+27-->[com.github.davidliu:audioswitch:c498d866c57f1d88056d5e7e7a78d622e3b0c046] /Users/csx/.gradle/caches/transforms-3/688bcd3840a77a311943c42bbaf20e2b/transformed/jetified-audioswitch-c498d866c57f1d88056d5e7e7a78d622e3b0c046/AndroidManifest.xml:11:9-35
+28
+29    <application
+30        android:name="android.app.Application"
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.6.0] /Users/csx/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+34        android:label="my_toolbox" >
+35        <activity
+36            android:name="com.my_toolbox.my_toolbox.MainActivity"
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+38            android:exported="true"
+39            android:hardwareAccelerated="true"
+40            android:launchMode="singleTop"
+41            android:theme="@style/LaunchTheme"
+42            android:windowSoftInputMode="adjustResize" >
+43
+44            <!--
+45                 Specifies an Android theme to apply to this Activity as soon as
+46                 the Android process has started. This theme is visible to the user
+47                 while the Flutter UI initializes. After that, this theme continues
+48                 to determine the Window background behind the Flutter UI.
+49            -->
+50            <meta-data
+51                android:name="io.flutter.embedding.android.NormalTheme"
+52                android:resource="@style/NormalTheme" />
+53
+54            <intent-filter>
+55                <action android:name="android.intent.action.MAIN" />
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+58            </intent-filter>
+59        </activity>
+60        <!--
+61             Don't delete the meta-data below.
+62             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+63        -->
+64        <meta-data
+65            android:name="flutterEmbedding"
+66            android:value="2" />
+67
+68        <uses-library
+68-->[androidx.window:window:1.0.0-beta04] /Users/csx/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+69            android:name="androidx.window.extensions"
+69-->[androidx.window:window:1.0.0-beta04] /Users/csx/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+70            android:required="false" />
+70-->[androidx.window:window:1.0.0-beta04] /Users/csx/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+71        <uses-library
+71-->[androidx.window:window:1.0.0-beta04] /Users/csx/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+72            android:name="androidx.window.sidecar"
+72-->[androidx.window:window:1.0.0-beta04] /Users/csx/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+73            android:required="false" />
+73-->[androidx.window:window:1.0.0-beta04] /Users/csx/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+74    </application>
+75
+76</manifest>
